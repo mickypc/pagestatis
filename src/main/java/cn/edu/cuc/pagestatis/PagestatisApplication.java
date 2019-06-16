@@ -7,11 +7,15 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import cn.edu.cuc.context.*;
+
 @SpringBootApplication
 public class PagestatisApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PagestatisApplication.class, args);
+		Constants myConst = Constants.getInstance();
+		myConst.init();
 	}
 
 	/*@Bean
