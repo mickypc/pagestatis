@@ -1,4 +1,4 @@
-package cn.edu.cuc.pagestatis.rest.hello;
+package cn.edu.cuc.pagestatis.rest;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
