@@ -3,7 +3,7 @@ pkgname=pagestatis
 
 #rm -rf ${pkgname}
 #rm ${pkgname}_${version}.zip
-#mkdir ${pkgname}
+mkdir ${pkgname}
 
 cp target/${pkgname}-${version}.jar ${pkgname}/
 cp bins/startup.sh bins/shutdown.sh ${pkgname}/
