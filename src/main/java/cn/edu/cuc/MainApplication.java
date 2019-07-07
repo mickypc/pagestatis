@@ -1,4 +1,4 @@
-package cn.edu.cuc.pagestatis;
+package cn.edu.cuc;
 
 import java.util.Arrays;
 import org.springframework.boot.SpringApplication;
@@ -8,14 +8,16 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import cn.edu.cuc.context.*;
+import cn.edu.cuc.pagestatis.model.uaa.*;
 
 @SpringBootApplication
-public class PagestatisApplication {
+public class MainApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PagestatisApplication.class, args);
+		SpringApplication.run(MainApplication.class, args);
 		Constants myConst = Constants.getInstance();
 		myConst.init();
+		UaaUtils.init();
 	}
 
 	/*@Bean

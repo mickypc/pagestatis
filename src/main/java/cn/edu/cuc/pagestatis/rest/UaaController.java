@@ -13,15 +13,7 @@ import cn.edu.cuc.pagestatis.model.uaa.*;
 import cn.edu.cuc.context.Constants;
 
 @RestController
-public class UaaController {
-	@Autowired
-	private HttpServletRequest httpreq;
-
-	@Autowired
-	private HttpServletResponse httpres;
-
-	private Constants myConst = Constants.getInstance();
-
+public class UaaController extends BaseController {
 	@RequestMapping("/rest/uaa/test")
 	public Map<String, Object> test() {
 		String ua = httpreq == null ? "" : httpreq.getHeader("user-agent");

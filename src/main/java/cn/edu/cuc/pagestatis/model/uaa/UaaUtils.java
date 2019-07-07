@@ -7,7 +7,7 @@ public class UaaUtils {
 	static private UserAgentAnalyzer uaa = null;
 	static private boolean inited = false;
 
-	static private void init() {
+	static public void init() {
 		if (!inited) {
 			uaa = UserAgentAnalyzer
 				.newBuilder()
